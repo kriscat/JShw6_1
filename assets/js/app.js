@@ -1,6 +1,5 @@
 while (1) {
     let a = +prompt("Выберите задание (1-3)");
-
     switch (a) {
         case 1:
             {
@@ -9,8 +8,8 @@ while (1) {
                 let summa = 0;
                 for (let i = 1; i <= n; i++) {
                     summa += i;
-                    alert(`Результат: ${summa}`);
                 }
+                alert(`Результат: ${summa}`);
                 break;
             };
 
@@ -22,11 +21,12 @@ while (1) {
                 let total = 1;
                 let i = 1;
                 for (i; i <= secondNum; i++) {
-                    alert(`Результат: ${total*=i}`);
+                    total *= i;
                 }
                 for (i; i <= firstNum; i++) {
-                    alert(`Результат: ${total*=i}`);
+                    total *= i;
                 }
+                alert(`Результат: ${total}`);
                 break;
             };
         case 3:
@@ -41,14 +41,10 @@ while (1) {
                     numOne = numTwo;
                     numTwo = numSum;
                     i = i + 1;
-                    console.log(`Результат: ${numTwo}`);
                 }
+                alert(`Результат: ${numTwo}`);
                 break;
-
             };
-
-
-
         default:
             if (a == "" || a == null) {
                 alert("Отмена");

@@ -35,12 +35,12 @@ while (1) {
                 let n = +prompt("Введите число n");
                 let numOne = 1;
                 let numTwo = 1;
-                let i = 0;
-                while (i < n - 2) {
+                let i = 3;
+                for (i; i <= n; i++) {
                     let numSum = numOne + numTwo;
                     numOne = numTwo;
                     numTwo = numSum;
-                    i = i + 1;
+
                 }
                 alert(`Результат: ${numTwo}`);
                 break;
